@@ -1,0 +1,71 @@
+/* 
+==========================
+Schedule Page 
+========================== 
+*/
+
+
+
+#schedule{
+
+
+
+	// default layout =============================================
+
+
+	//x-small =============================================
+	@include breakpoint(x-small){
+		background-color: violet;
+
+	}//end x-small breakpoint
+
+
+
+	//small =============================================
+	@include breakpoint(small){
+		background-color: red;
+		.CF{
+			@include col(8,12);
+			background-color: #808080;
+		}
+		.sessionsI{
+			@include col(4,12);
+			background-color: #808080;
+		}
+	}//end small breakpoint
+
+
+
+	//medium breakpoint =============================================
+	@include breakpoint(medium){
+		background-color: green;
+
+	}// end medium breakpoint
+
+
+
+	//large breakpoint =============================================
+	@include breakpoint(large){
+		background-color: yellow;
+
+	}//end large breakpoint
+
+
+
+	//x-large breakkpoint  =============================================
+	@include breakpoint(x-large){
+		background-color: blue;
+		color: white;
+
+	}//end xlarge breakpoint
+
+
+	//xx-large breakpoint  =============================================
+	@include breakpoint(xx-large){
+		background-color: orange;
+
+	}//end xxlarge breakpoint
+
+
+	
+}

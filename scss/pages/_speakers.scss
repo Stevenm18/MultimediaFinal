@@ -1,0 +1,69 @@
+/* 
+==========================
+Speakers Page 
+========================== 
+*/
+//layout
+#speakers{
+
+  // default layout =============================================
+.Speaker{
+  
+}
+
+  //x-small =============================================
+  @include breakpoint(x-small){
+    background-color: violet;
+
+  }//end x-small breakpoint
+
+
+
+  //small =============================================
+  @include breakpoint(small){
+    background-color: red;
+    .date{
+      @include col(1,2);
+    }
+    .location{
+      @include col(1,2);
+    }
+  }//end small breakpoint
+
+
+
+  //medium breakpoint =============================================
+  @include breakpoint(medium){
+    background-color: green;
+    .track.BW{
+      @include col(1,2);
+    }
+  }// end medium breakpoint
+
+
+
+  //large breakpoint =============================================
+  @include breakpoint(large){
+    background-color: yellow;
+
+  }//end large breakpoint
+
+
+
+  //x-large breakkpoint  =============================================
+  @include breakpoint(x-large){
+    background-color: blue;
+    color: white;
+
+  }//end xlarge breakpoint
+
+
+  //xx-large breakpoint  =============================================
+  @include breakpoint(xx-large){
+    background-color: orange;
+
+  }//end xxlarge breakpoint
+}
+//end #home
+
+
